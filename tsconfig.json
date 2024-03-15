@@ -1,0 +1,41 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "declaration": true,
+    "noImplicitThis": true,
+    "types": ["node"],
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "useDefineForClassFields": false, // breaks eosio-core
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": false,
+    "noImplicitReturns": true,
+    "allowUnreachableCode": true,
+    "noUncheckedIndexedAccess": false,
+    "strictFunctionTypes": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "lib/*": [
+        "lib/*"
+      ]
+    },
+    "allowJs": false,
+    "checkJs": false,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "sourceMap": true
+  },
+  "exclude": [
+    "node_modules",
+    "dist/**/*"
+  ]
+}
