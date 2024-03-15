@@ -19,11 +19,13 @@
     "typescript": "^5.4.2"
   },
   "scripts": {
-    "build": "rm -rf dist/* && tsc && tsc-alias -f",
+    "build": "rimraf dist/* && tsc && tsc-alias -f",
     "dev": "tsc-watch --onSuccess 'tsc-alias -f'",
-    "start": "yarn build && node dist/telegram.js"
+    "start": "yarn build && node ./dist/telegram.js"
   },
   "devDependencies": {
-    "@types/node": "^20.11.26"
+    "@types/node": "^20.11.26",
+    "cross-env": "^7.0.3",
+    "rimraf": "^5.0.5"
   }
 }

@@ -18,11 +18,9 @@
     "strictFunctionTypes": true,
     "strict": true,
     "resolveJsonModule": true,
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "paths": {
-      "lib/*": [
-        "lib/*"
-      ]
+      "*": ["*", "../node_modules/*"]
     },
     "allowJs": false,
     "checkJs": false,

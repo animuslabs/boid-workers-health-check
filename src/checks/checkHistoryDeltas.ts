@@ -1,5 +1,5 @@
-import { TRPCHistoryDeltasClient } from "../trpc/trpc"
-import { DeltasDataItem } from "../types/types"
+import { TRPCHistoryDeltasClient } from "trpc/trpc"
+import { DeltasDataItem } from "types/types"
 
   function getDateRange() {
     const today = new Date();

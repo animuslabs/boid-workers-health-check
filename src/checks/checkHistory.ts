@@ -1,4 +1,4 @@
-import { TRPCHistoryClient } from "../trpc/trpc"
+import { TRPCHistoryClient } from "trpc/trpc"
 
 // Formatting dates as 'YYYY-MM-DD'
 const format = (date) => date.toISOString().split('T')[0];

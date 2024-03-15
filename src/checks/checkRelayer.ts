@@ -1,9 +1,9 @@
 import { Name, PrivateKey, UInt8, UInt32, Action, AnyAction, Serializer } from "@wharfkit/antelope"
 import config from "../../.env.json"
-import { abi, Types } from "../types/boid.contract.types"
-import { TRPCRelayerClient } from "../trpc/trpc"
-import { AdditionalType } from "../types/types"
-import { toObject } from "../reuseFunctions"
+import { abi, Types } from "types/boid.contract.types"
+import { TRPCRelayerClient } from "trpc/trpc"
+import { AdditionalType } from "types/types"
+import { toObject } from "reuseFunctions"
 
 async function signActions(privKey:PrivateKey, actions:AnyAction[], nonce:UInt8, expires_utc_sec:UInt32) { 
   const message = Serializer.encode({ object: actions, abi, type: "Action[]" }) 
