@@ -6,7 +6,7 @@ import { DeltasDataItem } from "types/types"
     const toDate = new Date(today);
     toDate.setDate(toDate.getDate() - 1); // Yesterday
     const fromDate = new Date(toDate);
-    fromDate.setDate(fromDate.getDate() - 6); // 7 days ago from yesterday
+    fromDate.setDate(fromDate.getDate() - 40); // 40 days ago from yesterday
   
     // Formatting dates as 'YYYY-MM-DD'
     const format = (date) => date.toISOString().split('T')[0];
