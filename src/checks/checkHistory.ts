@@ -10,7 +10,7 @@ export const actions = ["invite.add", "stake", "unstake.end", "invite.claim", "o
     const toDate = new Date(today);
     toDate.setDate(toDate.getDate() - 1); // Yesterday
     const fromDate = new Date(toDate);
-    fromDate.setDate(fromDate.getDate() - 6); // 7 days ago from yesterday
+    fromDate.setDate(fromDate.getDate() - 40); // 40 days ago from yesterday
  
     return { from: fromDate, to: toDate };
   }
